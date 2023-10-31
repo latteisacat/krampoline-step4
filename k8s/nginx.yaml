@@ -48,7 +48,6 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app.kubernetes.io/managed-by: kargocd
@@ -60,5 +59,6 @@ spec:
           - backend:
               serviceName: nginx-service
               servicePort: 80
-            # 여러분의 app path 를 넣어주세요.
-            path: /kb998ba8fea82a(/|$)(.*)
+              # 여러분의 app path 를 넣어주세요.
+              path: /
+              pathType: Prefix
