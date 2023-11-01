@@ -56,10 +56,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
-            pathType: Prefix
-            backend:
+          - backend:
               service:
                 name: nginx-service
                 port:
                   number: 80
+            path: /
+            pathType: Prefix
