@@ -25,32 +25,32 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: database-creds-5cfdm888b6
-                  key: url
+                  key: url.txt
             - name: DATABASE_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: database-creds-5cfdm888b6
-                  key: username
+                  key: username.txt
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: database-creds-5cfdm888b6
-                  key: password
+                  key: password.txt
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
                   name: jwt-creds-9fdcg6h8c4
-                  key: jwt_secret
+                  key: jwt_secret.txt
             - name: AWS_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
                   name: aws-creds-27gmf478g6
-                  key: access_key
+                  key: access_key.txt
             - name: AWS_SECRET_KEY
               valueFrom:
                 secretKeyRef:
                   name: aws-creds-27gmf478g6
-                  key: secret_key
+                  key: secret_key.txt
           resources:
             requests:
               memory: 1Gi
