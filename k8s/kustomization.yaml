@@ -1,9 +1,12 @@
 namespace: default
+global:
+  common_env:
+    - name: HTTP_PROXY
+      value: http://krmp-proxy.9rum.cc:3128
 resources:
   - backend.yaml
   - nginx.yaml
   - frontend.yaml
-
 ---
 apiVersion: apps/v1
 kind: ConfigMap
