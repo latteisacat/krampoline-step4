@@ -1,13 +1,18 @@
-apiVersion: apps/v1
 namespace: default
 resources:
   - nginx.yaml
   - frontend.yaml
   - backend.yaml
+---
+apiVersion: apps/v1
+kind: ConfigMap
 configMapGenerator:
   - name: nginx
     files:
       - configs/default.conf
+---
+apiVersion: apps/v1
+kind: Secret
 secretGenerator:
   - name: database-creds
     files:
