@@ -14,7 +14,7 @@ secretGenerator:
     - password.txt
 - name: jwt-creds
   files:
-    - secret.txt
+    - jwt_secret.txt
 - name: aws-creds
   files:
     - access_key.txt
