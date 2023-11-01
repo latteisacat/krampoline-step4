@@ -7,16 +7,16 @@ configMapGenerator:
     files:
       - configs/default.conf
 secretGenerator:
-- name: database-creds
-  files:
-    - url.txt
-    - username.txt
-    - password.txt
-- name: jwt-creds
-  files:
-    - jwt_secret.txt
-- name: aws-creds
-  files:
-    - access_key.txt
-    - secret_key.txt
+  - name: database-creds
+    files:
+      - url.txt
+      - username.txt
+      - password.txt
+  - name: jwt-creds
+    files:
+      - jwt_secret.txt
+  - name: aws-creds
+    files:
+      - access_key.txt
+      - secret_key.txt
 
