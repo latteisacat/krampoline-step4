@@ -56,9 +56,10 @@ spec:
   rules:
     - http:
         paths:
-          - backend:
-              serviceName: nginx-service
-              servicePort: 80
-              # 여러분의 app path 를 넣어주세요.
-              path: /k6e35b56b0b46a
-              pathType: Prefix
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-service
+                port:
+                  number: 80
