@@ -1,8 +1,9 @@
 namespace: default
 resources:
+  - backend.yaml
   - nginx.yaml
   - frontend.yaml
-  - backend.yaml
+
 ---
 apiVersion: apps/v1
 kind: ConfigMap
