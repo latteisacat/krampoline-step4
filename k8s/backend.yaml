@@ -18,6 +18,8 @@ spec:
         - name: backend
           # 이미지를 넣어주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_abbc79fd6802
+          workingDir: /workspace/runner
+          command: ["java", "-jar", "-Dspring.profiles.active=production", "-Duser.timezone=Asia/Seoul", "animory-0.0.1-SNAPSHOT.jar"]
           env:
             - name: TZ
               value: Asia/Seoul
