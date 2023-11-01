@@ -22,7 +22,35 @@ spec:
             - name: TZ
               value: Asia/Seoul
             - name: DATABASE_URL
-              value: jdbc:mysql://mysql:3306/krampoline
+              valueFrom:
+                secretKeyRef:
+                  name: database-creds-5cfdm888b6
+                  key: url
+            - name: DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: database-creds-5cfdm888b6
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: database-creds-5cfdm888b6
+                  key: password
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-creds-9fdcg6h8c4
+                  key: jwt_secret
+            - name: AWS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-creds-27gmf478g6
+                  key: access_key
+            - name: AWS_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-creds-27gmf478g6
+                  key: secret_key
           resources:
             requests:
               memory: 1Gi
