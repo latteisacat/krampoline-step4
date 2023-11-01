@@ -2,9 +2,21 @@ namespace: default
 resources:
   - nginx.yaml
   - frontend.yaml
-  - backend.yaml
 configMapGenerator:
   - name: nginx
     files:
       - configs/default.conf
-      
+secretGenerator:
+- name: database-creds
+  files:
+    - url.txt
+    - username.txt
+    - password.txt
+- name: jwt-creds
+  files:
+    - secret.txt
+- name: aws-creds
+  files:
+    - access_key.txt
+    - secret_key.txt
+
