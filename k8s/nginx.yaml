@@ -26,7 +26,7 @@ spec:
       volumes:
       - name: nginx-config
         configMap:
-          name: nginx
+          name: nginx-f7tg7428gm
 
 ---
 apiVersion: v1
