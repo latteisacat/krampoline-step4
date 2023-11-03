@@ -8,6 +8,9 @@ configMapGenerator:
   - name: init-db
     files:
       - configs/init.sql
+---
+apiVersion: apps/v1
+kind: Secret
 secretGenerator:
   - name: database-creds
     files:
