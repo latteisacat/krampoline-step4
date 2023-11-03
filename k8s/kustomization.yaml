@@ -1,5 +1,3 @@
-apiVersion: apps/v1
-kind: Kustomization
 namespace: default
 resources:
   - mysql.yaml
