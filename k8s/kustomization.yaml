@@ -1,7 +1,13 @@
 namespace: default
 resources:
   - mysql.yaml
-  - config.yaml
+configMapGenerator:
+  - name: nginx
+    files:
+      - configs/default.conf
+  - name: init-db
+    files:
+      - configs/init.sql
 ---
 apiVersion: apps/v1
 kind: Secret
