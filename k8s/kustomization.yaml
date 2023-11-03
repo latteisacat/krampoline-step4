@@ -1,24 +1,24 @@
 namespace: default
 resources:
-  - mysql.yaml
+  - ./mysql.yaml
 configMapGenerator:
   - name: nginx
     files:
-      - configs/default.conf
+      - ./configs/default.conf
   - name: init-db
     files:
-      - configs/init.sql
+      - ./configs/init.sql
 secretGenerator:
   - name: database-creds
     files:
-      - url.txt
-      - username.txt
-      - password.txt
+      - ./url.txt
+      - ./username.txt
+      - ./password.txt
   - name: jwt-creds
     files:
-      - jwt_secret.txt
+      - ./jwt_secret.txt
   - name: aws-creds
     files:
-      - access_key.txt
-      - secret_key.txt
+      - ./access_key.txt
+      - ./secret_key.txt
 
