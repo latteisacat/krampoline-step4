@@ -43,7 +43,7 @@ spec:
       volumes:
         - name: init-db
           configMap:
-            name: init-db
+            name: init-db-5ff8kt48h6
   volumeClaimTemplates:
     - metadata:
         name: data
