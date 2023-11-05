@@ -5,16 +5,15 @@ resources:
   - backend.yaml
   - mysql.yaml
 configMapGenerator:
-  - name: nginx
+  - name: nginx-default
     files:
       - configs/default.conf
-      - configs/nginx.conf
+  - name: nginx-conf
+    files:
+	  - configs/nginx.conf
   - name: database-url
     files:
       - configs/url.txt
----
-apiVersion: apps/v1
-kind: Secret
 secretGenerator:
   - name: database-creds
     files:
