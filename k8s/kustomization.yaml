@@ -16,7 +16,7 @@ configMapGenerator:
       - configs/url.txt
   - name: nginx-mime
     files:
-	    - configs/mime.types
+      - configs/mime.types
 ---
 apiVersion: apps/v1
 kind: Secret
