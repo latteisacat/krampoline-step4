@@ -27,13 +27,11 @@ spec:
           mountPath: /etc/nginx
       volumes:
       - name: nginx-config
-        configMapKeyRef:
-          name: nginx-426md6bcb8
-          key: default.conf
+        configMap:
+          name: nginx-default-f2h9k9b7m9
       - name: nginx-build
-        configMapKeyRef:
-          name: nginx-426md6bcb8
-          key: nginx.conf
+        configMap:
+          name: nginx-conf-g9mh5h9g77
 
 ---
 apiVersion: v1
