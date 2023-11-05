@@ -18,7 +18,6 @@ spec:
         - name: backend
           # 이미지를 넣어주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_abbc79fd6802
-          command: ["sleep", "5m"]
           env:
             - name: TZ
               value: Asia/Seoul
