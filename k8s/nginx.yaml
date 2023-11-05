@@ -28,11 +28,11 @@ spec:
       volumes:
       - name: nginx-config
         configMapKeyRef:
-          name: nginx-b9tt2tt594
+          name: nginx-m5fk2mtbbt
           key: configs/default.conf
       - name: nginx-build
         configMapKeyRef:
-          name: nginx-b9tt2tt594
+          name: nginx-m5fk2mtbbt
           key: configs/nginx.conf
 
 ---
