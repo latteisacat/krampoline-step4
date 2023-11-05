@@ -13,7 +13,7 @@ configMapGenerator:
       - configs/init.sql
   - name: database-url
     files:
-      - url.txt
+      - configs/url.txt
 ---
 apiVersion: apps/v1
 kind: Secret
