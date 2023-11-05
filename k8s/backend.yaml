@@ -32,7 +32,10 @@ spec:
                   name: database-creds-5cfdm888b6
                   key: username.txt
             - name: DATABASE_PASSWORD
-              value: root
+              valueFrom:
+                secretKeyRef:
+                  name: database-creds-5cfdm888b6
+                  key: password.txt
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
