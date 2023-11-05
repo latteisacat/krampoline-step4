@@ -24,9 +24,9 @@ spec:
               value: Asia/Seoul
             - name: DATABASE_URL
               valueFrom:
-                secretKeyRef:
-                  name: database-creds-5cfdm888b6
-                  key: url.txt
+                configMapKeyRef:
+                  name: database-url-gh5k2d56d4
+                  value: url.txt
             - name: DATABASE_USERNAME
               valueFrom:
                 secretKeyRef:
