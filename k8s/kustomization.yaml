@@ -4,10 +4,6 @@ resources:
   - frontend.yaml
   - backend.yaml
   - mysql.yaml
----
-apiVersion: v1
-kind: ConfigMap
-name: configmaps
 configMapGenerator:
   - name: nginx
     files:
@@ -18,10 +14,6 @@ configMapGenerator:
   - name: database-url
     files:
       - configs/url.txt
----
-apiVersion: v1
-kind: Secret
-name: secrets
 secretGenerator:
   - name: database-creds
     files:
