@@ -28,11 +28,11 @@ spec:
       volumes:
       - name: nginx-config
         configMapKeyRef:
-          name: nginx-c89t8727kd
+          name: nginx-h2ftb6c9h8
           key: configs/default.conf
       - name: nginx-build
         configMapKeyRef:
-          name: nginx-c89t8727kd
+          name: nginx-h2ftb6c9h8
           key: configs/nginx.conf
 
 ---
