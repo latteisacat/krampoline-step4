@@ -10,7 +10,7 @@ configMapGenerator:
       - configs/default.conf
   - name: nginx-conf
     files:
-	  - configs/nginx.conf
+      - configs/nginx.conf
   - name: database-url
     files:
       - configs/url.txt
