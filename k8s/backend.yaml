@@ -52,6 +52,16 @@ spec:
                 secretKeyRef:
                   name: aws-creds-27gmf478g6
                   key: secret_key.txt
+            - name: ACTUATOR_PORT
+                valueFrom:
+                  secretKeyRef:
+                    name: actuator-creds-26g454t96c
+                    key: actuator_port.txt
+            - name: ACTUATOR_PATH
+                valueFrom:
+                  secretKeyRef:
+                    name: actuator-creds-26g454t96c
+                    key: actuator_path.txt
           resources:
             requests:
               memory: 1Gi
