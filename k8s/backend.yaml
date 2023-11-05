@@ -18,7 +18,6 @@ spec:
         - name: backend
           # 이미지를 넣어주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_abbc79fd6802
-          command: ["sleep", "5m"]
           env:
             - name: TZ
               value: Asia/Seoul
@@ -30,12 +29,12 @@ spec:
             - name: DATABASE_USERNAME
               valueFrom:
                 secretKeyRef:
-                  name: database-creds-7fgh9bkd9f
+                  name: database-creds-c76gbt99kb
                   key: username.txt
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: database-creds-7fgh9bkd9f
+                  name: database-creds-c76gbt99kb
                   key: password.txt
             - name: JWT_SECRET
               valueFrom:
