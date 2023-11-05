@@ -11,13 +11,15 @@ configMapGenerator:
   - name: init-db
     files:
       - configs/init.sql
+  - name: database_url
+    files:
+      - url.txt
 ---
 apiVersion: apps/v1
 kind: Secret
 secretGenerator:
   - name: database-creds
     files:
-      - url.txt
       - username.txt
       - password.txt
   - name: jwt-creds
