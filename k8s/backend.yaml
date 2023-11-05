@@ -26,7 +26,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: database-url-gh5k2d56d4
-                  value: url.txt
+                  key: url.txt
             - name: DATABASE_USERNAME
               valueFrom:
                 secretKeyRef:
