@@ -23,10 +23,17 @@ spec:
         volumeMounts:
         - name: nginx-config
           mountPath: /etc/nginx/conf.d
+        - name: nginx-build
+          mountPath: /etc/nginx/build
       volumes:
       - name: nginx-config
-        configMap:
-          name: nginx-f7tg7428gm
+        configMapKeyRef:
+          name: nginx-b9tt2tt594
+          key: configs/default.conf
+      - name: nginx-build
+        configMapKeyRef:
+          name: nginx-b9tt2tt594
+          key: configs/nginx.conf
 
 ---
 apiVersion: v1
