@@ -34,7 +34,7 @@ spec:
       - name: nginx-build
         configMap:
           name: nginx-conf-g9mh5h9g77
-      - name: ngnix-mime
+      - name: nginx-mime
         configMap:
           name: nginx-mime-28tfmdkg28
 
