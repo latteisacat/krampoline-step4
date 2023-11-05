@@ -11,7 +11,7 @@ configMapGenerator:
   - name: init-db
     files:
       - configs/init.sql
-  - name: database_url
+  - name: database-url
     files:
       - url.txt
 ---
