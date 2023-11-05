@@ -29,4 +29,8 @@ secretGenerator:
     files:
       - access_key.txt
       - secret_key.txt
+  - name: actuator-creds
+    files:
+    - actuator_port.txt
+    - actuator_path.txt
 
