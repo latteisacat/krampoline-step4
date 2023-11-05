@@ -4,6 +4,9 @@ resources:
   - frontend.yaml
   - backend.yaml
   - mysql.yaml
+---
+apiVersion: apps/v1
+kind: ConfigMap
 configMapGenerator:
   - name: nginx
     files:
