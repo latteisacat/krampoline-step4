@@ -14,6 +14,9 @@ configMapGenerator:
   - name: database-url
     files:
       - configs/url.txt
+---
+apiVersion: apps/v1
+kind: Secret
 secretGenerator:
   - name: database-creds
     files:
