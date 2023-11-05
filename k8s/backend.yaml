@@ -29,12 +29,12 @@ spec:
             - name: DATABASE_USERNAME
               valueFrom:
                 secretKeyRef:
-                  name: database-creds-5cfdm888b6
+                  name: database-creds-7fgh9bkd9f
                   key: username.txt
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: database-creds-5cfdm888b6
+                  name: database-creds-7fgh9bkd9f
                   key: password.txt
             - name: JWT_SECRET
               valueFrom:
