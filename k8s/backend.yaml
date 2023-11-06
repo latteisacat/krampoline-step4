@@ -63,7 +63,7 @@ spec:
                   key: actuator_path.txt
           resources:
             requests:
-              memory: 1Gi
+              memory: 2Gi
 ---
 apiVersion: v1
 kind: Service
