@@ -25,18 +25,13 @@ spec:
           mountPath: /etc/nginx/conf.d
         - name: nginx-build
           mountPath: /etc/nginx
-        - name: nginx-mime
-          mountPath: /etc/nginx
       volumes:
       - name: nginx-config
         configMap:
           name: nginx-default-f2h9k9b7m9
       - name: nginx-build
         configMap:
-          name: nginx-conf-g9mh5h9g77
-      - name: nginx-mime
-        configMap:
-          name: nginx-mime-28tfmdkg28
+          name: nginx-conf-hc7hk98d88
 
 ---
 apiVersion: v1
