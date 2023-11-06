@@ -11,12 +11,10 @@ configMapGenerator:
   - name: nginx-conf
     files:
       - configs/nginx.conf
+      - configs/mime.types
   - name: database-url
     files:
       - configs/url.txt
-  - name: nginx-mime
-    files:
-      - configs/mime.types
 ---
 apiVersion: apps/v1
 kind: Secret
