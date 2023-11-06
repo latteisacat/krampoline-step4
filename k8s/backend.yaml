@@ -73,4 +73,4 @@ spec:
   selector:
     app: backend
   ports:
-    - port: 8090
+    - port: 8080
