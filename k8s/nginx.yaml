@@ -28,7 +28,7 @@ spec:
       volumes:
       - name: nginx-config
         configMap:
-          name: nginx-default-m5g9bcg27d
+          name: nginx-default-f966hd6gfc
       - name: nginx-build
         configMap:
           name: nginx-conf-g76d79dfbc
