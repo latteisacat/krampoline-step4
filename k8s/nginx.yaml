@@ -18,6 +18,7 @@ spec:
       containers:
       - name: nginx
         image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a41e2a6464a9
+        command: [ "/bin/bash", "-c", "nginx -g 'daemon off;'" ]
         securityContext: 
           runAsUser: 0
         ports:
