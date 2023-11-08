@@ -18,7 +18,6 @@ spec:
       containers:
       - name: nginx
         image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a41e2a6464a9
-        command: [ "sleep", "10m"]
         ports:
         - containerPort: 80
         volumeMounts:
