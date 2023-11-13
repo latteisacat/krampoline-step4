@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: krmp-d2hub-idock.9rum.cc/dev-test/repo_de48bb490d59
+        image: krmp-d2hub-idock.9rum.cc/dev-test/repo_4e6bd1080677
         ports:
         - containerPort: 80
         volumeMounts:
