@@ -33,7 +33,7 @@ spec:
           name: nginx-default-mh4f92kt6t
       - name: nginx-build
         configMap:
-          name: nginx-conf-g76d79dfbc
+          name: nginx-conf-4tb7hbd82f
 
 ---
 apiVersion: v1
